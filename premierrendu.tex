@@ -1,0 +1,114 @@
+\documentclass{report}
+\title{Premier rendu }
+\author{Ilhem BADREDDINE,\\ Latifa BOUCHOUAF, \\ Xiaofan XU, \\ Rok IVANSEK.}
+\date{21/07/2015}
+
+\usepackage[utf8]{inputenc}
+\usepackage[french]{babel}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\geometry{scale=1.0, nohead}
+\usepackage{graphicx}
+\graphicspath{ {figures/} }
+\usepackage{array,multirow,makecell}
+\setcellgapes{1pt}
+\makegapedcells
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash }b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash }b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash }b{#1}}
+\renewcommand{\baselinestretch}{1.5}
+
+
+\begin{document}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario & L'enregistrement à une séance par l'application    \\
+\hline  Acteurs &  membre du club \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Se connecter sur son compte.
+\item Aller dans section planning.
+\item Choisir un horaire qui convient.
+\item Validation si il reste des places.
+\item Envoi d'une validation
+\end{enumerate} \\
+\hline
+\end{tabular}
+\caption{enregistrement membre.\label{engmembre}}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario & L'enregistrement à une séance par l'appli    \\
+\hline  Acteurs &  Animateur \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Se connecter sur un compte visiteur.
+\item Aller dans section planning.
+\item Choisir un horaire qui convient.
+\item Validation si il reste des places.
+\end{enumerate}\\
+\hline
+\end{tabular}
+\caption{enregistrement visiteur.\label{engvisit}}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario &  Création de planning \\
+\hline  Acteurs &  Administrateur \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Se connecter sur son compte.
+\item Aller dans section planning.
+\item Choisir les horaires et les créneaux.
+\item Choisir les deux animateurs pour chaque séance.
+\item Validation du planning.
+\item Envoie du planning aux animateurs.
+\end{enumerate}\\
+\hline
+\end{tabular}
+\caption{Création de planning.\label{creatplan}}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario &  Modification du planning \\
+\hline  Acteurs &  Administrateur \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Se connecter sur son compte.
+\item Aller dans section planning.
+\item Choisir les horaires et les créneaux à changer.
+\item Choisir les deux animateurs pour chaque séance.
+\item Validation du planning.
+\item Envoie des nouveaux planning au animateur.
+\item Envoie des modification des séances au participant des séance modifier
+\end{enumerate}\\
+\hline
+\end{tabular}
+\caption{Modification du planning.\label{modifplan}}
+\end{center}
+\end{table}
+
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario &  Validation des séance du planning \\
+\hline  Acteurs &  Animateur \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Se connecter sur son compte.
+\item Aller dans section planning.
+\item Valider les séances à animer.
+\end{enumerate}\\
+\hline
+\end{tabular}
+\caption{Modification du planning.\label{creatplan}}
+\end{center}
+\end{table}
+
+
+\end{document}
