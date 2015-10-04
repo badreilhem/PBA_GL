@@ -20,6 +20,8 @@
 
 \begin{document}
 
+\chapter{Scénarios Concrets}
+\section{planning}
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|L{4cm}||L{10cm}|}
@@ -30,7 +32,7 @@
 \item Aller dans section planning.
 \item Choisir un horaire qui convient.
 \item Validation si il reste des places.
-\item Envoi d'une validation
+\item Envoi d'une validation.
 \end{enumerate} \\
 \hline
 \end{tabular}
@@ -97,7 +99,7 @@
 \begin{table}[htbp]
 \begin{center}
 \begin{tabular}{|L{4cm}||L{10cm}|}
-\hline Nom du scénario &  Validation des séance du planning \\
+\hline Nom du scénario &  Validation des séances du planning \\
 \hline  Acteurs &  Animateur \\
 \hline  Flot d'événements &  \begin{enumerate}
 \item Se connecter sur son compte.
@@ -110,5 +112,60 @@
 \end{center}
 \end{table}
 
+\section{Compte client}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario & Création du compte utilisateur \\
+\hline  Acteurs &  membre du club \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Ouvrir l'application.
+\item Aller dans section créer un compte utilisateur.
+\item Entrer le numéros de licence.
+\item Entrer les informations liées à handicap 
+\item Entrer le nom et prénom.
+\item (à voir) accepter la charte ou le règlement du club.
+\item Validation des information.
+\end{enumerate} \\
+\hline
+\end{tabular}
+\caption{Création du compte utilisateur.\label{creamembre}}
+\end{center}
+\end{table}
 
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario & Création d'un compte visiteur  \\
+\hline  Acteurs &  membre du club \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Ouvrir l'application.
+\item Aller dans section se connecter sans compte(compte visiteur).
+\item Validation les informations.
+\end{enumerate} \\
+\hline
+\end{tabular}
+\caption{Création d'un compte visiteur.\label{creavisit}}
+\end{center}
+\end{table}
+
+\section{Paiement en ligne}
+\begin{table}[htbp]
+\begin{center}
+\begin{tabular}{|L{4cm}||L{10cm}|}
+\hline Nom du scénario & Paiement des séances \\
+\hline  Acteurs &  membre du club \\
+\hline  Flot d'événements &  \begin{enumerate}
+\item Se connecter à son compte.
+\item Aller dans section paiement de des séances.
+\item (à voir) entrer les information bancaire.
+\item Payer les séances.
+\item Validation.
+\item Réception de la facture.
+\end{enumerate} \\
+\hline
+\end{tabular}
+\caption{Paiement des séances.\label{paiement}}
+\end{center}
+\end{table}
 \end{document}
